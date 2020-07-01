@@ -1,0 +1,25 @@
+h2,
+h3 {
+  text-align: left;
+  border-bottom: none;
+}
+
+#bibl {
+  text-align: center;
+}
+h3 {
+  border-bottom: solid 2px #80614a;
+}
+
+a {
+  text-decoration: underline;
+}
+
+li {
+  margin-bottom: 2vw;
+}
+
+li,
+em {
+  font-size: 18px;
+}

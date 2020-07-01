@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- W3 sidebar -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="styles/index.css">
+
+    <title>Brugia - atrakcyjne miasto</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button" id="close_btn">Zamknij &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
+        <a href="history.html" class="w3-bar-item w3-button linki">Historia i legenda</a>
+        <a href="buildings.html" class="w3-bar-item w3-button linki">Mapa z zabytkami</a>
+        <a href="list.html" class="w3-bar-item w3-button linki">Opis zabytków</a>
+        <a href="extension.html" class="w3-bar-item w3-button linki">Przydatne linki</a>
+        <a href="contact.php" class="w3-bar-item w3-button linki ">Kontakt</a>
+        <a href="links.html" class="w3-bar-item w3-button linki">Bibliografia</a>
+    </div>
+
+    <!-- Page Content -->
+    <button class="w3-button" onclick="w3_open()" id="burger">☰</button>
+
+    <div class="home-image" id="home">
+        <h1>Brugia - atrakcyjne miasto</h1>
+
+        <!-- scroll-down button -->
+        <div class="section">
+            <a href="#" class="scroll-down"></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Bruges -->
+        <h2 class="leftAlign">Brugia</h2>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <p>
+                    Brugia (nider. Brugge) jest malowniczym miastem położonym w Belgii. To stolica <a href="https://www.vlaanderen.be/en/discover-flanders" class="outsideLink" target="_blank">Flandrii</a>, nazywana
+                    również Wenecją Północy. Tę nazwę zawdzięcza licznym kanałom, które przecinają miasto. W
+                    średniowieczu Brugia była bardzo dobrze rozwiniętym ośrodkiem handlowym.
+                </p>
+                <p>W dzisiejszych czasach już tak nie jest, ale pomimo tego miasto nadal tętni życiem. Co roku turyści
+                    przyjeżdżają tu, aby podziwiać średniowieczne budowle, oglądać malownicze kamienice lub spacerować w
+                    ciszy po parku Minnewater.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <img src="images/rosary.JPG" alt="Rozenhoedkaai">
+            </div>
+        </div>
+
+        <!-- Unesco -->
+        <h2 class="rightAlign">UNESCO</h2>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                <img src="images/unesco.PNG" alt="Znak światowego Dziedzictwa UNESCO" />
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-8">
+                <p>Niepowtarzalność i wyjątkowość Brugii została dostrzeżona także przez <a href="https://www.unesco.pl/" class="outsideLink" target="_blank">UNESCO</a>. W 2000 roku
+                    zabytkowe
+                    centrum
+                    miasta zostało wpisane na Listę Światowego Dziedzictwa UNESCO. Wcześniej znalazły się na niej
+                    Beginaż oraz
+                    wieża Belfort. Wpisanie Brugii na tak ważną listę, komisja argumentuje w następujący sposób:
+                </p>
+                <p>
+                    <em>Brugia jest szczególnym przykładem zabudowy średniowiecznej, która zachowała historyczną,
+                        rozwijającą się
+                        przez stulecia tkankę miejską i gdzie pierwotna zabudowa gotycka stanowi istotną część
+                        tożsamości
+                        miasta.
+                        Brugia, jedna z handlowych i kulturalnych stolic Europy, rozwinęła kontakty kulturalne z
+                        różnymi
+                        częściami
+                        świata. Z miastem tym wiąże się także szkoła malarska prymitywistów flamandzkich.</em>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="jumbotron text-center">
+        <span>Autorem niniejszego serwisu jest Sylwia Zwolińska.
+            <br>Serwis ten stanowi integralną część pracy licencjackiej (kierunek: Elektroniczne Przetwarzanie
+            Informacji), przygotowanej pod kierunkiem dr. hab. Grzegorza Bilińskiego, prof. ASP <br>na Wydziale
+            Zarządzania i Komunikacji Społecznej Uniwersytetu Jagiellońskiego.</span><br>
+        <span>Sylwia Zwolińska</span><br>
+        <span>Copyright &copy; 2020</span>
+    </footer>
+
+    <!-- menu function -->
+    <script src="codes/menu.js"></script>
+    <!-- scroll down btn -->
+    <script src="codes/scroll_down_btn.js"></script>
+</body>
+
+</html>

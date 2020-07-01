@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: rgb(54, 53, 53);
+  font-size: 18px;
+}
+iframe {
+  width: 100vw;
+  height: 30vw;
+  border: none;
+  margin-bottom: -2vw;
+}
+.menu_btn {
+  color: white;
+}
+.back_img {
+  background-image: url("../images/ourLadyCanal.JPG");
+  background-color: #774d2d;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  margin-top: -15vh;
+}
+
+h1 {
+  top: 40%;
+  left: 50%;
+  color: white;
+}
+
+h2 {
+  border-bottom: solid 2px #80614a;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+.row {
+  margin-bottom: 5%;
+}
+
+.menu2 {
+  text-align: center;
+}
+p {
+  padding-top: 4vw;
+}
+
+#menu_local a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+li a:hover {
+  color: white;
+}
+li:nth-child(1) {
+  background-color: rgb(94, 50, 10);
+}
+
+li:nth-child(2) {
+  background-color: chocolate;
+}
+
+li:nth-child(3) {
+  background-color: darkgreen;
+}
+
+li:nth-child(4) {
+  background-color: darkblue;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 1540px) {
+  .back_img {
+    height: 100vh;
+    margin-top: -20vh;
+  }
+}

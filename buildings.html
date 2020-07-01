@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- W3 sidebar -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/buildings.css">
+
+    <title>Brugia | Mapa z zabytkami</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-animate-left w3-center" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button" id="close_btn">Zamknij &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button linki">Strona główna</a>
+        <a href="history.html" class="w3-bar-item w3-button linki">Historia i legenda</a>
+        <a href="buildings.html" class="w3-bar-item w3-button linki">Mapa z zabytkami</a>
+        <a href="list.html" class="w3-bar-item w3-button linki">Opis zabytków</a>
+        <a href="extension.html" class="w3-bar-item w3-button linki">Przydatne linki</a>
+        <a href="contact.php" class="w3-bar-item w3-button linki ">Kontakt</a>
+        <a href="links.html" class="w3-bar-item w3-button linki">Bibliografia</a>
+    </div>
+
+    <!-- Page Content -->
+    <button class="w3-button  menu_btn" onclick="w3_open()" id="burger">☰</button>
+
+    <div class="back_img">
+        <h1>Mapa z zabytkami</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="leftAlign">Starówka</h2>
+                <p>Pomimo tego, że Brugia przestała stanowić ważny ośrodek handlowy, to nadal wyróżniała się spośród
+                    innych miast. Zachowała swój średniowieczny koloryt, który nadaje jej niepowtarzalny urok. Cała
+                    zabudowa starego miasta sprawia, że Brugię można określić mianem zabytku architektonicznego.
+                    Wyjątkowość tego miejsca podkreśla również fakt, że starówka, pomimo wybuchu wojen, nie została
+                    zniszczona na przestrzeni kolejnych wieków.</p>
+                <p>Aby zobaczyć mapę starówki oraz okolicy, kliknij w przycisk.
+                <a href="https://www.google.com/maps/d/drive?state=%7B%22ids%22%3A%5B%2215Tfniw00LYIhgexM8u5aX4TiuKSbvXhf%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22108161947730488444625%22%7D&usp=sharing"
+                    target="_blank" class="btn btn-secondary w3-large">Mapa miasta</a></p>
+            </div>
+        </div>
+        <!-- Aside menu -->
+        <div class="row">
+            <div class="col-12" id="map">
+            <h2 class="leftAlign">Mapa</h2>
+            <p>Kliknij w wybrany punkt na mapie, aby dowiedzieć się więcej o danym miejscu.</p>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" id="menu_local">
+                <p>Oznaczenia na mapie:</p>
+                <ul>
+                    <li>Place</li>
+                    <li>Obiekty sakralne</li>
+                    <li>Parki i punkty widokowe</li>
+                    <li>Budynki miejskie</li>
+                </ul>
+            </div>
+
+            <!-- City map -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
+
+                <img src="images/maps_plan.PNG" usemap="#image-map" style="width: 739px; height: 653px;"
+                    alt="Mapa starówki w Brugii, gdzie widać zaznaczone najważniejsze atrakcje tego miasta.">
+
+                <map name="image-map" id="image-map">
+                    <!--Markt  -->
+                    <area target="_self" alt="Markt" title="Markt" href="list.html#markt" coords="306,278,15"
+                        shape="circle">
+
+                    <!-- Burg -->
+                    <area target="_self" alt="Burg" title="Burg" href="list.html#burg" coords="374,280,15"
+                        shape="circle">
+
+                    <!-- Minnewater -->
+                    <area target="_self" alt="Minnewater" title="Minnewater" href="list.html#minnewater"
+                        coords="342,624,15" shape="circle">
+
+                    <!-- Beginaż -->
+                    <area target="_self" alt="Beginaż" title="Beginaż" href="list.html#beginaz" coords="288,562,15"
+                        shape="circle">
+
+                    <!-- Kościół NMP -->
+                    <area target="_self" alt="Kościół Najświętszej Marii Panny" title="Kościół Najświętszej Marii Panny"
+                        href="list.html#lady" coords="321,432,15" shape="circle">
+
+                    <!-- Most Bonifacego -->
+                    <area target="_self" alt="Most św.Bonifacego" title="Most św.Bonifacego" href="list.html#most"
+                        coords="345,424,15" shape="circle">
+
+                    <!-- Rozenhoedkaai -->
+                    <area target="_self" alt="Rozenhoedkaai" title="Rozenhoedkaai" href="list.html#rozenhoedkaai"
+                        coords="393,341,15" shape="circle">
+
+                    <!-- Belfort -->
+                    <area target="_self" alt="Belfort" title="Belfort" href="list.html#belfort" coords="330,303,15"
+                        shape="circle">
+
+                    <!-- Bazylika Krwi Chrystusa -->
+                    <area target="_self" alt="Bazylika Świętej Krwi" title="Bazylika Świętej Krwi" href="list.html#holy"
+                        coords="370,302,15" shape="circle">
+
+                    <!-- Ratusz -->
+                    <area target="_self" alt="Ratusz" title="Ratusz" href="list.html#ratusz" coords="385,294,15"
+                        shape="circle">
+
+                    <!-- Plac Jana van Eycka -->
+                    <area target="_self" alt="Plac Jana van Eycka" title="Plac Jana van Eycka" href="list.html#eyck"
+                        coords="349,178,15" shape="circle">
+
+                    <!-- Kaplica Jerozolimska -->
+                    <area target="_self" alt="Kaplica Jerozolimska" title="Kaplica Jerozolimska"
+                        href="list.html#kaplica" coords="557,146,15" shape="circle">
+
+                    <!-- Młyn św. Jana -->
+                    <area target="_self" alt="Młyn św. Jana" title="Młyn św. Jana" href="list.html#mlyn"
+                        coords="642,31,15" shape="circle">
+
+                    <!-- Katedra Świętego Zbawiciela -->
+                    <area target="_self" alt="Katedra Świętego Zbawiciela" title="Katedra Świętego Zbawiciela"
+                        href="list.html#zbawiciel" coords="258,400,15" shape="circle">
+
+                    <!-- Park Królowej Astrid -->
+                    <area target="_self" alt="Park Królowej Astrid" title="Park Królowej Astrid" href="list.html#astrid"
+                        coords="480,379,15" shape="circle">
+
+                </map>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="jumbotron text-center">
+        <span>Autorem niniejszego serwisu jest Sylwia Zwolińska.
+            <br>Serwis ten stanowi integralną część pracy licencjackiej (kierunek: Elektroniczne Przetwarzanie
+            Informacji), przygotowanej pod kierunkiem dr. hab. Grzegorza Bilińskiego, prof. ASP <br>na Wydziale
+            Zarządzania i Komunikacji Społecznej Uniwersytetu Jagiellońskiego.</span><br>
+        <span>Sylwia Zwolińska</span><br>
+        <span>Copyright &copy; 2020</span>
+    </footer>
+
+    <!-- menu function-->
+    <script src="codes/menu.js"></script>
+    <!-- top button function-->
+    <script src="codes/top_btn.js"></script>
+
+</body>
+
+</html>
