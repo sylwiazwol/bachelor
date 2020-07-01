@@ -1,4 +1,4 @@
-# Website about Bruges
+# Bruges -an attractive city
 
 I created this site as my bachelor's degree project.
 
